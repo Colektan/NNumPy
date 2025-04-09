@@ -8,5 +8,10 @@ If you want to train the model on your own dataset, you need to write up the `Da
 
 Open test_model.py, specify the saved model's path in `model_path` and the test dataset's path in `data_dir`, then run the script, the script will output the accuracy on the test dataset.
 
+### File introduction.
+- `data_explore.ipynb`, used for checking the form of data and the method of reading data.
+- `draw.ipynb`, drawing some plots.
+- `vis.ipynb`, local visualization of weights and activation status.
+- `weight_visualization.py`, overall visualization of weights
 
 
