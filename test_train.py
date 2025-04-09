@@ -18,13 +18,13 @@ data_dir = "dataset/cifar-10-batches-py/"
 exp_dir = "results"
 eval_batch = 5
 batch_size = 100
-hidden_size = 2000
+hidden_size = 6000
 label_size = 10
-lr = 0.01
+lr = 0.06
 scheduler_type = "MultiStepLR"
-milestones = [6000, 9000]
+milestones = [6000, 9000, 30000]
 gamma = 0.5
-epoch = 100
+epoch = 200
 weight_decay = [5e-3, 5e-3, 5e-3, 5e-3]
 # weight_decay = None# size_list = [(3, 3, 1, 0), (10, 3, 1, 0), (40, 3, 1, 0)]6
 current_time = datetime.datetime.now()

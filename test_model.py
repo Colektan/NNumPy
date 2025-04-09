@@ -15,7 +15,7 @@ import json
 np.random.seed(309)
 
 data_dir = "dataset/cifar-10-batches-py/"
-model_path = r"results\DataAug_3+Jitter\best_models\best_model.pickle"
+model_path = r"results\exp_2025-04-09-00-10-56\best_models\best_model.pickle"
     
 # get data mean and build transformation
 def rescale_and_centralize_transform_test(image):

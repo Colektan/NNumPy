@@ -68,9 +68,9 @@ def adjust_brightness(image, brightness_factor):
 #     return cv2.LUT(image, table)
 
 def adjust_saturation(image, saturation_factor):
-    hsv_image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+    hsv_image = cv2.cvtColor(image, cv2.COLOR_RGB2HSV)
     hsv_image[:, :, 1] = np.clip(hsv_image[:, :, 1] * saturation_factor, 0, 255)
-    return cv2.cvtColor(hsv_image, cv2.COLOR_HSV2BGR)
+    return cv2.cvtColor(hsv_image, cv2.COLOR_HSV2RGB)
 
 class ImageRandomJitter:
     def __init__(self, brightness=0.2, saturation=0.2):
